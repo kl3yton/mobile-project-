@@ -10,10 +10,10 @@ class DatabaseHelper {
 
   MySQLConnection? _connection;
 
-  static const String _host     = '127.0.0.1';
+  static const String _host     = '10.0.2.2'; // ← IP do PC no emulador
   static const int    _port     = 3306;
   static const String _user     = 'root';
-  static const String _password = 'sua_senha'; // ← altere aqui
+  static const String _password = '2303'; // ← sua senha do MySQL
   static const String _database = 'unipass_db';
 
   Future<MySQLConnection> get connection async {
